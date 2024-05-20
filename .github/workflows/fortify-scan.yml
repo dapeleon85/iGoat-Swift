@@ -61,10 +61,4 @@ jobs:
            name: scancentral-logs
            path: ~/.fortify/scancentral/log
            
-      ### Archive ScanCentral Client logs on failure ###
-      - name: Export SSC vulnerability data to GitHub
-        uses: fortify/github-action/ssc-export@v1               
-        env:
-           SSC_URL: http://b8d00bd32ecb.sn.mynetname.net:8080/ssc
-           SSC_TOKEN: b8f28277-eca4-40dd-afa4-d0cf3c911288
-           SSC_APPVERSION: iGoat-Swift:1
+      
